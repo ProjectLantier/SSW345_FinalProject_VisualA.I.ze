@@ -1,8 +1,9 @@
 class Camera:
-    def __init__(self, resolution: int, focal_length: float):
-        self.resolution = resolution
-        self.focal_length = focal_length
+    def __init__(self, image_resolution: int, focal_length_mm: float) -> None:
+        self.image_resolution = image_resolution
+        self.focal_length_mm = focal_length_mm
     
     def take_picture(self) -> str:
-        image = f"Picture taken with resolution {self.resolution} and focal length {self.focal_length}"
+        # Add error checking here if needed
+        image = f"Picture taken with resolution {self.image_resolution} and focal length {self.focal_length_mm} mm."
         return image
