@@ -1,7 +1,8 @@
 import ImageProcessor
 import camera
+import TextboxUI
 
-class VisuAIlize:
+class VisuAIlize(ImageProcessor, camera, TextboxUI):
     def __init__(self, camera, image_processor):
         self.camera = camera
         self.image_processor = image_processor

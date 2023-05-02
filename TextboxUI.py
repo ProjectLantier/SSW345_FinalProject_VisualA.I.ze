@@ -1,3 +1,5 @@
+import SearchResult
+
 class TextboxUI(SearchResult):
     def __init__(self, result):
         super().__init__(result)
